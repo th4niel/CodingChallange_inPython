@@ -1,12 +1,12 @@
-import imageio as iio
+import imageio.v3 as iio
 
 filenames = ['pic1.png', 'pic2.png']
-image = [ ]
+images = [ ]
 
 for filename in filenames:
-    image.append(iio.imread(filename))
-    
-iio.imwrite('pic.gif', image, duration = 500, loop = 0)
+  images.append(iio.imread(filename))
+
+iio.imwrite('team.gif', images, duration = 500, loop = 0)
 
 
 
